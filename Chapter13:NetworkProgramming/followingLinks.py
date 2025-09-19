@@ -22,10 +22,3 @@ for i in range(count+1):
     soup = BeautifulSoup(html, 'html.parser')
     tags = soup('a')
     url = tags[position-1].get('href', None)
-
-    #print(tag.get('href', None), i)
-    # for i, tag in enumerate(tags):
-    # if i == position:
-    #     url = tag.get('href', None)
-    #     print(url)
-    #     break
