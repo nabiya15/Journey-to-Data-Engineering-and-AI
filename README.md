@@ -75,7 +75,7 @@ If you’re learning data engineering or AI too, feel free to connect — I love
 
 If you’d like to explore my complete learning path — including all five phases, week-by-week topics, and the tools I’m mastering along the way — you can find it here:
 
-👉 **[Full Data Engineering & AI Roadmap](./docs/roadmap_overview.md)**
+👉 **[Full Data Engineering & AI Roadmap](./docs/README.md)**
 
 ---
 
