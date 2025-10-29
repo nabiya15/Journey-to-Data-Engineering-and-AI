@@ -53,9 +53,6 @@ Package Version
 
 ---
 
-asttokens 3.0.0
-black 25.9.0
-
 ### 💭 Reflection
 
 This first assignment may look small, but it felt symbolic —
