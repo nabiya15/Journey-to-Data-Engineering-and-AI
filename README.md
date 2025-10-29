@@ -7,7 +7,7 @@ Welcome to my personal learning journey — a space where I document, build, and
 This repository is more than just code; it’s a living record of persistence, structure, and curiosity.  
 From humble beginnings with Python fundamentals to architecting real-world data pipelines — this is where it all unfolds.
 
-## This isn’t a bootcamp repo or a copy of tutorials. It’s my structured, hands-on path — documenting every week, every lab, and every realization as I move from Python basics to full-fledged data pipelines and AI integration.
+This isn’t a bootcamp repo or a copy of tutorials. It’s my structured, hands-on path — documenting every week, every lab, and every realization as I move from Python basics to full-fledged data pipelines and AI integration.
 
 ## 🧭 Repository Structure
 
@@ -71,5 +71,13 @@ If you’re learning data engineering or AI too, feel free to connect — I love
 
 ---
 
+### 🔗 Roadmap Overview
+
+If you’d like to explore my complete learning path — including all five phases, week-by-week topics, and the tools I’m mastering along the way — you can find it here:
+
+👉 **[Full Data Engineering & AI Roadmap](./docs/roadmap_overview.md)**
+
+---
+
 **Last updated:** October 2025  
-**Status:** 🌸 _Foundations laid — onward from here._
+**Status:** _Foundations laid — The journey continues._
