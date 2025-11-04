@@ -1,83 +1,158 @@
-# 🌍 Journey to Data Engineering & AI
+# Journey to Data Engineering and AI
 
-### _by Nabiya Maredia_
-
-Welcome to my personal learning journey — a space where I document, build, and reflect on my path toward becoming a Data Engineer and AI practitioner.
-
-This repository is more than just code; it’s a living record of persistence, structure, and curiosity.  
-From humble beginnings with Python fundamentals to architecting real-world data pipelines — this is where it all unfolds.
-
-This isn’t a bootcamp repo or a copy of tutorials. It’s my structured, hands-on path — documenting every week, every lab, and every realization as I move from Python basics to full-fledged data pipelines and AI integration.
-
-## 🧭 Repository Structure
-
-| Folder                | Description                                                                                                     |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **roadmap/**          | Structured weekly assignments from my Data Engineering & AI learning roadmap (16+ weeks of guided progression). |
-| **capstones/**        | Larger, end-to-end projects integrating concepts from data pipelines to AI models.                              |
-| **practice_archive/** | My early learning materials and experiments, including Py4E and exploratory notebooks.                          |
-| **docs/**             | Reflections, notes, and summaries about concepts, tools, and milestones.                                        |
+**Author:** Nabiya Maredia  
+**Last Updated:** October 2025
 
 ---
 
-## 🗓️ Current Phase: _Foundations & Setup_
+## 1. Overview
 
-📍 **Week 1 – Setup and Python Basics**  
-→ [roadmap/week01_setup_and_python_basics](./roadmap/week01_setup_and_python_basics/)
+This repository documents a structured, hands-on learning roadmap toward becoming a **Data Engineer and AI-focused technologist**.  
+Each week represents a stage in developing real-world engineering skills — from foundational Python programming to production-grade data pipelines and AI integrations.
 
-- Verified global Python environment and logged package versions
-- Practiced initial Python scripting and problem-solving
-- Learned how to organize, document, and version control my work
+The roadmap emphasizes **production-style problem solving** rather than academic exercises. Every lab is designed as a realistic scenario requiring modular design, testing, documentation, and reflection.
 
 ---
 
-## 📈 Progress Tracker
+## 2. Learning Philosophy
 
-| Phase  | Focus Area                        | Status         |
-| ------ | --------------------------------- | -------------- |
-| Week 1 | Environment Setup                 | 🔄 In Progress |
-| Week 2 | Data Fundamentals (Pandas, Numpy) | ⏳ Upcoming    |
-| Week 3 | SQL for Data Engineers            | ⏳ Upcoming    |
-
-_(Will update weekly as I move through the roadmap.)_
-
----
-
-## 🧠 Reflections
-
-- Each assignment is a small victory, a step toward mastering the craft of data engineering and AI.
-- When I began this, I didn’t just want to _learn_ data engineering — I wanted to _understand it deeply_:  
-  how data flows, scales, and becomes meaningful.
-- Each folder here represents a checkpoint — a small, steady step in that direction.
-- This journey isn’t about rushing to the finish — it’s about building endurance, understanding, and clarity.
+| Core Principle               | Description                                                                                                           |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Production-First Design**  | Each assignment simulates a real-world data or system workflow instead of a classroom exercise.                       |
+| **Test-Driven Learning**     | Every lab integrates `pytest`-based unit tests to mirror CI/CD validation practices used in production environments.  |
+| **Modular Codebase**         | Code is organized into `/src` and `/tests` directories for scalability, readability, and maintainability.             |
+| **Documentation Discipline** | Each folder includes professional `README.md` files and in-code docstrings that follow industry conventions.          |
+| **Reflection and Growth**    | Every milestone concludes with written reflections, connecting technical skills to professional engineering behavior. |
 
 ---
 
-## 💡 Tech Stack (growing list)
+## 3. Repository Structure
 
-- **Languages:** Python, SQL
-- **Libraries:** Pandas, NumPy, Matplotlib
-- **Tools:** VS Code, Jupyter, Git, GitHub
-- **Upcoming:** Airflow, Spark, dbt, Snowflake, AWS
+```text
+Journey-to-Data-Engineering-and-AI/
+│
+├── week01_environment_and_python_basics/
+│   ├── lab1.1_environment_setup/
+│   │   ├── setup_log.txt
+│   │   └── README.md
+│   ├── lab1.2_sensor_data_quality/
+│   │   ├── src/
+│   │   │   └── analyzer.py
+│   │   ├── tests/
+│   │   │   └── test_analyzer.py
+│   │   ├── data/
+│   │   │   └── sample_readings.txt
+│   │   ├── main.py
+│   │   ├── sensor_summary.txt
+│   │   └── README.md
+│   └── practice/
+│       └── practice_day1.py
+│
+├── week02_to_be_added/
+│
+└── README.md
+```
+
+| Folder            | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| **/src**          | Core logic modules for data processing and transformations.        |
+| **/tests**        | `pytest` test cases validating logic and error handling.           |
+| **/data**         | Input datasets or simulated samples used for analysis.             |
+| **/practice**     | Small exercises and exploratory scripts.                           |
+| **/weekXX\_.../** | Each week’s folder contains labs, documentation, and deliverables. |
 
 ---
 
-## 🪄 Connect
+## 4. Testing Framework — Pytest
 
-- 🌐 [LinkedIn](https://www.linkedin.com/in/nabiya-maredia)
-- 🧰 [GitHub Profile](https://github.com/nabiya15)
+All labs use **pytest** for automated validation and regression testing, ensuring every function behaves as expected under different conditions.
 
-If you’re learning data engineering or AI too, feel free to connect — I love sharing ideas and learning paths.
+**Run tests**
+
+```bash
+pytest -v
+```
+
+**Example test**
+
+```python
+def test_analyze_readings_correctness():
+    readings = [72, 74, 71, 73, 70, 75]
+    from src.analyzer import analyze_readings
+    result = analyze_readings(readings)
+    assert result["stable_count"] == 3
+    assert result["average_stable"] == 74.0
+```
+
+**Test categories**
+
+| Category              | Description                                                               |
+| --------------------- | ------------------------------------------------------------------------- |
+| **Unit Tests**        | Validate specific functions for correctness and expected output.          |
+| **Edge-Case Tests**   | Ensure code handles missing, invalid, or empty input gracefully.          |
+| **Integration Tests** | Verify that modular components work correctly when orchestrated together. |
 
 ---
 
-### 🔗 Roadmap Overview
+## 5. Weekly Learning Flow
 
-If you’d like to explore my complete learning path — including all five phases, week-by-week topics, and the tools I’m mastering along the way — you can find it here:
+| Phase                     | Focus Area                                       | Key Outcomes                                             |
+| ------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
+| **Foundation**            | Python fundamentals, environment setup           | Build confidence with syntax, logic, and scripting.      |
+| **Modularization**        | Structuring reusable codebases                   | Create clean, maintainable project architectures.        |
+| **Data Engineering Core** | Ingestion → Validation → Transformation → Export | Learn to design real-world ETL pipelines.                |
+| **Analytics & AI**        | Data preprocessing and model integration         | Prepare and analyze data for AI workflows.               |
+| **Capstone Projects**     | Full-scale data pipelines and deployments        | Integrate all skills into end-to-end production systems. |
 
-👉 **[Full Data Engineering & AI Roadmap](./docs/README.md)**
+Each week includes:
+
+- **Scenario:** A realistic business or data problem.
+- **Implementation:** Modular coding structure (`/src`, `/tests`, `main.py`).
+- **Testing:** Automated validation using `pytest`.
+- **Documentation:** Clear README with reflection and key takeaways.
 
 ---
 
-**Last updated:** October 2025  
-**Status:** _Foundations laid — The journey continues._
+## 6. Tools and Technologies
+
+| Category                   | Tools / Frameworks                          |
+| -------------------------- | ------------------------------------------- |
+| **Programming Language**   | Python 3.11+                                |
+| **Testing Framework**      | Pytest                                      |
+| **Data Libraries**         | Pandas, NumPy                               |
+| **Environment Management** | pip, virtualenv                             |
+| **Version Control**        | Git & GitHub                                |
+| **Documentation**          | Markdown, Google Docstring Style            |
+| **Future Modules**         | SQLAlchemy, Apache Airflow, PySpark, Docker |
+
+---
+
+## 7. Professional Practices
+
+| Area                    | Practice                                        | Purpose                                     |
+| ----------------------- | ----------------------------------------------- | ------------------------------------------- |
+| **Version Control**     | Consistent, descriptive commits using Git       | Track evolution of the codebase.            |
+| **Environment Logging** | `setup_log.txt` for Python and package versions | Ensure reproducibility across systems.      |
+| **Automated Testing**   | `pytest`-based validation                       | Catch errors early and enforce reliability. |
+| **Code Style**          | PEP 8 + clear docstrings                        | Promote readability and collaboration.      |
+| **Documentation**       | README and targeted inline comments             | Maintain clarity and self-containment.      |
+
+---
+
+## 8. Reflective Statement
+
+This repository is an evolving record of how I am training to **think, document, and operate like a professional data engineer**.  
+Each function, test, and report is designed with the mindset of real-world reliability — transforming conceptual learning into repeatable engineering practice.
+
+By treating each lab as a production problem, I am developing the habits required to:
+
+- Decompose complex data challenges.
+- Design modular, testable systems.
+- Communicate intent clearly through documentation and structure.
+
+**End goal:** Build a portfolio of tested, documented, and deployable data-engineering projects that reflect real-world readiness for modern AI-driven workflows.
+
+---
+
+**Repository:** <https://github.com/nabiya15/Journey-to-Data-Engineering-and-AI>  
+**Contact:** <https://github.com/nabiya15>
