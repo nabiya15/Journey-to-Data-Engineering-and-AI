@@ -155,4 +155,4 @@ By treating each lab as a production problem, I am developing the habits require
 ---
 
 **Repository:** <https://github.com/nabiya15/Journey-to-Data-Engineering-and-AI>  
-**Contact:** <https://github.com/nabiya15>
+**Contact:** <m.nabiya@gmail.com>

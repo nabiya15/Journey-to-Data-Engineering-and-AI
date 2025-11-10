@@ -1,39 +1,25 @@
-/Users/nabiyamaredia/Desktop/Data Engineering/nm_de_env/bin/python
-Python 3.13.3
-pip 25.3 from /Users/nabiyamaredia/Desktop/Data Engineering/nm_de_env/lib/python3.13/site-packages/pip (python 3.13)
-Package                 Version
------------------------ -----------
-asttokens               3.0.0
-black                   25.9.0
-click                   8.3.0
-decorator               5.2.1
-executing               2.2.1
-iniconfig               2.3.0
-ipython                 9.6.0
-ipython_pygments_lexers 1.1.1
-jedi                    0.19.2
-matplotlib-inline       0.2.1
-mypy_extensions         1.1.0
-numpy                   2.3.4
-packaging               25.0
-pandas                  2.3.3
-parso                   0.8.5
-pathspec                0.12.1
-pexpect                 4.9.0
-pip                     25.3
-platformdirs            4.5.0
-pluggy                  1.6.0
-prompt_toolkit          3.0.52
-ptyprocess              0.7.0
-pure_eval               0.2.3
-Pygments                2.19.2
-pytest                  8.4.2
-python-dateutil         2.9.0.post0
-pytokens                0.2.0
-pytz                    2025.2
-six                     1.17.0
-stack-data              0.6.3
-tokenize_rt             6.2.0
-traitlets               5.14.3
-tzdata                  2025.2
-wcwidth                 0.2.14
+Setup log initialized at 2025-11-10 16:24:55.504078
+
+| Index   | Package/Platform                             |Version                                      |
+---------------------------------------------------------------------------------------------------------
+| 1       | python                                       | Python 3.13.3                               |
+---------------------------------------------------------------------------------------------------------
+| 2       | pip                                          | pip 25.3 from /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env/lib/python3.13/site-packages/pip (python 3.13)|
+---------------------------------------------------------------------------------------------------------
+| 3       | virtualenv                                   | /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env|
+---------------------------------------------------------------------------------------------------------
+| 4       | os                                           | posix - Darwin 24.6.0                       |
+---------------------------------------------------------------------------------------------------------
+| 5       | git                                          | git version 2.37.1                          |
+---------------------------------------------------------------------------------------------------------
+| 6       | pandas                                       | 2.3.3                                       |
+---------------------------------------------------------------------------------------------------------
+| 7       | numpy                                        | 2.3.4                                       |
+---------------------------------------------------------------------------------------------------------
+| 8       | jupyter                                      | Not Installed                               |
+---------------------------------------------------------------------------------------------------------
+| 9       | pytest                                       | Not Installed                               |
+---------------------------------------------------------------------------------------------------------
+| 10      | requests                                     | Not Installed                               |
+---------------------------------------------------------------------------------------------------------
+Table data successfully written to setup_log.txt
