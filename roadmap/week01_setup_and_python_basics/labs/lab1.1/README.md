@@ -1,70 +1,93 @@
-# Data Engineering Roadmap - Assignment 1
+# Lab 1.1 — Environment Setup and Version Logging
 
-### 🗓️ Lab 1.1: Environment Setup & System Check
+**Scenario:**  
+You have recently joined a data engineering team responsible for maintaining production ETL pipelines.  
+Before you can contribute, your team lead requires that your development environment be **reproducible, auditable, and version-logged**.  
+This ensures that all engineers across the team run identical environments — minimizing “it works on my machine” issues in production.
 
-This marks the first step in my Data Engineering and AI learning journey — a quiet but significant beginning.  
-Before diving into code, pipelines, or transformations, I wanted to make sure the foundation was ready.  
-This week’s task was to verify my environment setup, confirm that Python is installed globally, and record the system configuration that will carry me through this roadmap.
-
-## ✨ Overview
-
-This repository documents my environment setup for **Week 1** of the Data Engineering Roadmap.  
-It includes:
-
-- My globally installed Python version
-- The system path to my Python executable
-- pip version and installed libraries
-- A generated log file (`setup_log.txt`) capturing all these details
-
-The purpose was simple — to ensure that my machine is prepared, stable, and ready for the months of experimentation and learning ahead.
+Your task is to **automate the setup validation** of your local Python environment and generate a `setup_log.txt` file that documents key version information.
 
 ---
 
-## 🧰 Commands Used
+## Question (Exam Format)
 
-I’m currently using a **global Python installation** (not a virtual environment), I used these commands to verify and log my setup.
+Design and implement a Python script named `setup_environment.py` that performs the following tasks:
 
-### Since I am using Mac 🍎:
+1. **Version Verification:**
 
-```bash
-where python > setup_log.txt
-python --version >> setup_log.txt
-pip --version >> setup_log.txt
-pip list >> setup_log.txt
-```
+   - Retrieve and display the following version details:
+     - Python interpreter
+     - pip package manager
+     - Operating system
+     - Virtual environment status (if any)
 
-### Also researched them for Windows 🪟:
+2. **Package Snapshot:**
 
-```bash
-which python3 >setup_log.txt
-python3 --version >> setup_log.txt
-pip3 --version >> setup_log.txt
-pip3 list >> setup_log.txt
-```
+   - Retrieve and list the versions of commonly used data engineering libraries:
+     - `pandas`, `numpy`, `pytest`, and `requests`
+     - If any are missing, handle the exception gracefully and record `"Not Installed"`.
 
-These simple commands not only display the versions but also redirect the results into a text file, forming a traceable log for future reference.
+3. **Environment Log Generation:**
 
-### 📄 Example Output (setup_log.txt)
+   - Write all collected details into a text file named `setup_log.txt`
+   - The file must be timestamped and formatted for readability.
+   - Include both console output and file output confirmation messages.
 
-/Users/nabiyamaredia/Desktop/Data Engineering/nm_de_env/bin/python
-Python 3.13.3
-pip 25.3 from /Users/nabiyamaredia/Desktop/Data Engineering/nm_de_env/lib/python3.13/site-packages/pip (python 3.13)
-Package Version
+4. **Error Handling & Output Validation:**
+   - Ensure the script runs without breaking even if certain packages are unavailable.
+   - Provide clear log messages in both the console and text file.
 
 ---
 
-### 💭 Reflection
+## Example Output
 
-This first assignment may look small, but it felt symbolic —
-a way of acknowledging that every big data system starts with one working environment, one clean setup, and one line of code that runs successfully.
-I learned how to:
+**Console Output:**
+[INFO] Python Version: 3.11.5
+[INFO] pip Version: 24.0
+[INFO] Operating System: macOS 14.1
+[INFO] Virtual Environment: Global
+[INFO] pandas: 2.2.3 | numpy: 1.26.0 | pytest: Not Installed | requests: 2.32.2
+[INFO] Setup log successfully written to setup_log.txt
 
-- Log command-line outputs into a text file (>, >>)
-- Confirm global Python and pip paths
-- Keep structured documentation using Markdown
-- Begin treating every project, no matter how small, as something worth documenting. Each of these steps is a quiet rehearsal for the more complex documentation I’ll be writing later — for pipelines, ETL projects, and capstones that will shape this roadmap into something tangible.
+ruby
+Copy code
 
-### 📎 Next Steps
+**File Output (`setup_log.txt`):**
+Environment Setup Log — 2025-10-05 15:42:08
 
-- Create a Github repository and explore Github in connection with VS Code
-- Begin working on the first python assignment
+Python Version: 3.11.5
+pip Version: 24.0
+Operating System: macOS 14.1
+Virtual Environment: Global
+
+Installed Packages:
+pandas: 2.2.3
+numpy: 1.26.0
+pytest: Not Installed
+requests: 2.32.2
+
+Generated by setup_environment.py
+
+---
+
+## Evaluation Rubric
+
+| Criteria                       | Description                                         | Marks |
+| ------------------------------ | --------------------------------------------------- | ----- |
+| **Automation & Accuracy**      | Correctly retrieves all system and package versions | 4     |
+| **Error Handling**             | Handles missing packages gracefully                 | 2     |
+| **Output Formatting**          | Clean, timestamped, and readable log file           | 2     |
+| **Code Style & Documentation** | Proper docstrings and comments                      | 2     |
+
+---
+
+## Submission Checklist
+
+- ✅ `setup_environment.py` executes without error
+- ✅ `setup_log.txt` created in project folder
+- ✅ Code includes docstrings and clear console logs
+- ✅ Output verified manually
+
+---
+
+**Next:** Proceed to `lab1.2_sensor_data_quality/README.md`
