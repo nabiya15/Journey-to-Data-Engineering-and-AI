@@ -53,27 +53,27 @@ Setup log initialized at 2025-11-10 16:24:55.504078
 
 Setup log initialized at 2025-11-10 16:24:55.504078
 
-## | Index | Package/Platform |Version |
+- | Index | Package/Platform |Version |
 
-## | 1 | python | Python 3.13.3 |
+- | 1 | python | Python 3.13.3 |
 
-## | 2 | pip | pip 25.3 from /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env/lib/python3.13/site-packages/pip (python 3.13)|
+- | 2 | pip | pip 25.3 from /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env/lib/python3.13/site-packages/pip (python 3.13)|
 
-## | 3 | virtualenv | /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env|
+- | 3 | virtualenv | /Users/nabiyamaredia/Desktop/Data Engineering/DE/Journey-to-Data-Engineering-and-AI/roadmap/nm_de_env|
 
-## | 4 | os | posix - Darwin 24.6.0 |
+- | 4 | os | posix - Darwin 24.6.0 |
 
-## | 5 | git | git version 2.37.1 |
+- | 5 | git | git version 2.37.1 |
 
-## | 6 | pandas | 2.3.3 |
+- | 6 | pandas | 2.3.3 |
 
-## | 7 | numpy | 2.3.4 |
+- | 7 | numpy | 2.3.4 |
 
-## | 8 | jupyter | Not Installed |
+- | 8 | jupyter | Not Installed |
 
-## | 9 | pytest | Not Installed |
+- | 9 | pytest | Not Installed |
 
-## | 10 | requests | Not Installed |
+- | 10 | requests | Not Installed |
 
 Table data successfully written to setup_log.txt
 
