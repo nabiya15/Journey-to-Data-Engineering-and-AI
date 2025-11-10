@@ -49,7 +49,6 @@ Checking for system requirements...
 Setup log written to setup_log.txt
 
 **File Output (`setup_log.txt`):**
-Setup log initialized at 2025-11-10 16:24:55.504078
 
 Setup log initialized at 2025-11-10 16:24:55.504078
 
