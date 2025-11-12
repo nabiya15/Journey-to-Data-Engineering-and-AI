@@ -34,6 +34,7 @@ You’ll create three functions (modular, testable) and test them using pytest.
 
 ## 3. Folder Structure:
 
+```text
 lab2_inventory_price_validator/
 │
 ├── src/
@@ -53,6 +54,7 @@ lab2_inventory_price_validator/
 | **data/products.txt**       | Input file containing product data                    |
 | **main.py**                 | Orchestrates pipeline execution.                      |
 | **inventory_summary.txt**   | Output summary report generated after processing.     |
+```
 
 ## 5.Testing Overview
 
