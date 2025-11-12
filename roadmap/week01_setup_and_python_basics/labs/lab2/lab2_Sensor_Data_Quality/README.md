@@ -1,4 +1,4 @@
-# Lab 1.2 — Sensor Data Quality Check
+# Lab 1.2.1 — Sensor Data Quality Check
 
 **Objective:**  
 Design and implement a Python-based data quality analyzer that simulates how IoT sensor readings are validated and summarized in a production data pipeline.
@@ -39,7 +39,7 @@ Your task is to build a **Sensor Data Quality Analyzer** — a mini pipeline tha
 ## 3. Folder Structure
 
 ```text
-lab1.2_sensor_data_quality/
+lab2_sensor_data_quality/
 │
 ├── src/
 │   └── analyzer.py
@@ -70,7 +70,7 @@ lab1.2_sensor_data_quality/
 | **4** | Orchestrate full flow   | `main.py`            | Console + file output            |
 | **5** | Validate with tests     | `pytest -v`          | All test cases pass successfully |
 
-5. Testing Overview
+## 5. Testing Overview
 
 Run automated validation using pytest:
 pytest -v
