@@ -46,6 +46,7 @@ lab2_inventory_price_validator/
 ├── main.py/
 ├── inventory_summary.txt/
 └── README.md
+```
 
 | Folder/File                 | Description                                           |
 | --------------------------- | ----------------------------------------------------- |
@@ -54,7 +55,6 @@ lab2_inventory_price_validator/
 | **data/products.txt**       | Input file containing product data                    |
 | **main.py**                 | Orchestrates pipeline execution.                      |
 | **inventory_summary.txt**   | Output summary report generated after processing.     |
-```
 
 ## 5.Testing Overview
 

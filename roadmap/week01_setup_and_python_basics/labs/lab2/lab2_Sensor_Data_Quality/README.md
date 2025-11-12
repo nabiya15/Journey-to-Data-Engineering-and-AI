@@ -50,6 +50,7 @@ lab2_sensor_data_quality/
 ├── main.py
 ├── sensor_summary.txt
 └── README.md
+```
 
 | Folder/File                  | Description                                            |
 | ---------------------------- | ------------------------------------------------------ |
@@ -58,7 +59,6 @@ lab2_sensor_data_quality/
 | **data/sample_readings.txt** | Input file simulating IoT sensor logs.                 |
 | **main.py**                  | Orchestrates pipeline execution.                       |
 | **sensor_summary.txt**       | Output summary report generated after processing.      |
-```
 
 ## 4. Implementation Plan
 
