@@ -1,6 +1,5 @@
 import pytest
-from src.analyzer import analyze_readings, load_readings, save_summary
-from src.analyzer import load_readings
+from src.analyzer import analyze_readings, load_readings, save_summary, load_readings
 import tempfile, os
 from pathlib import Path
 

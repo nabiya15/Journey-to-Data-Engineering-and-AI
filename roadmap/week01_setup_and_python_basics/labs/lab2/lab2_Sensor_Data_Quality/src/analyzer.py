@@ -40,10 +40,10 @@ def load_readings(filepath: str) -> List[int]:
     print(f"[INFO] Loaded {len(readings)} valid readings.")
     return readings
 
-
 def analyze_readings(readings: List[int]) -> Dict:
     """
-    Filter even-indexed (stable) readings and compute metrics:
+    * Take a list of numbers as indicated by readings: List[int]
+    * Filter even-indexed (stable) and compute metrics:
       - total_readings, stable_count, sum_stable, average_stable, stable_values
     Raises:
         ValueError: if readings is empty
@@ -51,7 +51,12 @@ def analyze_readings(readings: List[int]) -> Dict:
     if not readings:
         raise ValueError("Readings list is empty")  
     #pick values at 0 based indices or indices 1,3,5 (the even -numbered readings in real life)
-    stable_values = [val for i, val in enumerate(readings) if i%2 ==1]
+    '''
+    positions 0 1 2 3 4 5
+    values    72 74 71 73 70 75
+    we keep indices 1,3,5 -> values 74,73,75. In real life we could count indices from 1. hence we are keeping the numbers at real world positions 2,4,6 which in program means 1,3,5 (0 based indexing)
+    '''
+    stable_values = [val for i, val in enumerate(readings) if i%2 ==1] # following syntax for string comprehension
     total_readings = len(readings)
     stable_count = len(stable_values)
     sum_stable = sum(stable_values)
@@ -64,13 +69,6 @@ def analyze_readings(readings: List[int]) -> Dict:
         "average_stable": average_stable,
         "stable_values": stable_values
     }
-
-def save_summary(summary: Dict, output_path: str) -> None:
-    """
-    Append a human-readable summary with a timestamp to output_path.
-    """
-    raise NotImplementedError
-
 
 def save_summary(summary: Dict, output_path: str) -> None:
     """

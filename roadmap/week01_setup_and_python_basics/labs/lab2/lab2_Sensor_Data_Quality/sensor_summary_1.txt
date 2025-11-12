@@ -1,0 +1,8 @@
+Sensor Data Quality Report — 2025-11-12 00:52:11
+
+Total Readings: 6
+Stable Readings Count: 3
+Sum of Stable Readings: 222
+Average Stable Reading: 74.0
+Stable Values: [74, 73, 75]
+
