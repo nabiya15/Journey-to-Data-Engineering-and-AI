@@ -4,3 +4,9 @@ Total Inventory Value: $1930.0
 Average Price: $482.5
 Product Names: Laptop, Headphones, Keyboard, Camera
 
+---- Summary Report (2025-11-12 15:32:40) ----
+Total Valid Products: 51
+Total Inventory Value: $10499.0
+Average Price: $205.86
+Product Names: Laptop, Headphones, Mouse, Keyboard, Monitor, Webcam, Microphone, USB Cable, HDMI Cable, Desk Lamp, Chair, Table, Notebook, Pen, Smartphone, Tablet, Router, Printer, Scanner, Hard Drive, SSD, Power Bank, Smartwatch, Camera, Tripod, Flash Drive, External GPU, VR Headset, Game Controller, Speakers, Monitor Stand, Desk Mat, Cable Organizer, Drawing Tablet, LED Strip, Docking Station, Surge Protector, Wireless Charger, Laptop Stand, Cooling Pad, Graphic Card, Motherboard, CPU, RAM, Case, Power Supply, Camera Lens, Coffee Mug, Wall Clock, Laptop Bag, Candle
+
