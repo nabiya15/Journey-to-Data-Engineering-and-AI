@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import Dict
 from datetime import datetime
 
 def load_products(filepath: str) -> dict:
@@ -67,7 +67,7 @@ def analyze_products(products: dict) -> dict:
     print(f"[INFO]Analysis Complete")
     return summary
 
-def save_summary(summary: dict, output_path: str)-> None:
+def save_summary(summary: dict, input_file: str, output_path: str)-> None:
     """
     - Write a clean, timestampedreport of the inventory summary to a text file at the output_path.
     - Summary format:
@@ -81,6 +81,7 @@ def save_summary(summary: dict, output_path: str)-> None:
     try:    
         with open(output_path, 'a') as file:
             file.write(f"---- Summary Report ({timestamp}) ----\n")
+            file.write(f"Analyzed the file at {input_file}\n")
             file.write(f"Total Valid Products: {summary['total_valid_products']}\n")
             file.write(f"Total Inventory Value: ${summary['total_inventory_value']}\n")
             file.write(f"Average Price: ${summary['average_price']}\n")
