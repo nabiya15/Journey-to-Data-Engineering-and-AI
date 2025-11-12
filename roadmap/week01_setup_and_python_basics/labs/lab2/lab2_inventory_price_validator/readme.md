@@ -83,6 +83,7 @@ Camera,500
 
 ### Console
 
+```text
 [INFO] Processing 6 readings...
 [INFO] Valid data extracted: {"Laptop": 1200, "Headphones": 150, "Keyboard": 80, "Camera": 500}
 [INFO] Total valid products: 4 | Total Value: 1930 | Average price: 482.5 | Products: Laptop, Headphones, Keyboard, Camera
@@ -94,3 +95,4 @@ Inventory Summary Report — 2025-11-15 15:35:00
 Valid Products: 4
 Total Inventory Value: 1930
 Average Price: 482.5
+```
