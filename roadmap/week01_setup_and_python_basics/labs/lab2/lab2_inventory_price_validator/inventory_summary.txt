@@ -1,0 +1,6 @@
+---- Summary Report (2025-11-12 15:26:38) ----
+Total Valid Products: 4
+Total Inventory Value: $1930.0
+Average Price: $482.5
+Product Names: Laptop, Headphones, Keyboard, Camera
+

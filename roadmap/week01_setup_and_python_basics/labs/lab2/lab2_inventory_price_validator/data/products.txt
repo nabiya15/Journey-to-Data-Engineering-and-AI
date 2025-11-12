@@ -1,0 +1,8 @@
+Laptop,1200
+Headphones,150
+Mouse,N/A
+,300
+Keyboard, 80
+Cable, -50
+Monitor,-200
+Camera,500
