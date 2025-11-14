@@ -301,23 +301,7 @@ Each week includes:
 - **Validate with tests:** Run `pytest -v` before considering work complete
 - **Match the learning philosophy:** Labs should simulate real production problems, not toy examples
 
-## 11. Reflective Statement
-
-This repository is an evolving record of how I am training to **think, document, and operate like a professional data engineer**.
-
-Each function, test, and report is designed with the mindset of real-world reliability — transforming conceptual learning into repeatable engineering practice.
-
-By treating each lab as a production problem, I am developing the habits required to:
-
-- Decompose complex data challenges.
-- Design modular, testable systems.
-- Communicate intent clearly through documentation and structure.
-
-**End goal:** Build a portfolio of tested, documented, and deployable data-engineering projects that reflect real-world readiness for modern AI-driven workflows.
-
----
-
-## 12. Learning Resources
+## 11. Learning Resources
 
 ### Selected Learning Resources
 
@@ -337,6 +321,22 @@ Concise, authoritative references and practical tutorials used throughout the la
 | Apache Airflow |                          | https://airflow.apache.org/                                      |
 | Git & GitHub   |                          | https://docs.github.com/                                         |
 | Community Q&A  |                          | https://stackoverflow.com/                                       |
+
+## 12. Reflective Statement
+
+This repository is an evolving record of how I am training to **think, document, and operate like a professional data engineer**.
+
+Each function, test, and report is designed with the mindset of real-world reliability — transforming conceptual learning into repeatable engineering practice.
+
+By treating each lab as a production problem, I am developing the habits required to:
+
+- Decompose complex data challenges.
+- Design modular, testable systems.
+- Communicate intent clearly through documentation and structure.
+
+**End goal:** Build a portfolio of tested, documented, and deployable data-engineering projects that reflect real-world readiness for modern AI-driven workflows.
+
+---
 
 **Repository:** <https://github.com/nabiya15/Journey-to-Data-Engineering-and-AI>  
 **Contact:** <m.nabiya@gmail.com>
