@@ -317,5 +317,26 @@ By treating each lab as a production problem, I am developing the habits require
 
 ---
 
+## 12. Learning Resources
+
+### Selected Learning Resources
+
+Concise, authoritative references and practical tutorials used throughout the labs. Prefer official documentation first; supplement with focused courses, books, and example repos as needed and validate changes with tests.
+
+| Topic          | Sub-topic(if applicable) | Resource Link                                                    |
+| -------------- | ------------------------ | ---------------------------------------------------------------- |
+| Python         |                          | [Official Documentation](https://docs.python.org/3/)             |
+|                | Basics                   | [Real Python](https://realpython.com/)                           |
+|                | Basics Course            | [Python for Everybody](https://www.py4e.com/)                    |
+|                | Python csv module        | [W3Schools](https://www.w3schools.com/python/ref_module_csv.asp) |
+| pytest         |                          | https://docs.pytest.org/                                         |
+| pandas         |                          | https://pandas.pydata.org/                                       |
+| NumPy          |                          | https://numpy.org/                                               |
+| requests       |                          | https://docs.python-requests.org/                                |
+| Docker         |                          | https://www.docker.com/                                          |
+| Apache Airflow |                          | https://airflow.apache.org/                                      |
+| Git & GitHub   |                          | https://docs.github.com/                                         |
+| Community Q&A  |                          | https://stackoverflow.com/                                       |
+
 **Repository:** <https://github.com/nabiya15/Journey-to-Data-Engineering-and-AI>  
 **Contact:** <m.nabiya@gmail.com>
