@@ -7,7 +7,8 @@
 
 ## 1. Project Overview
 
-This repository documents a structured, hands-on learning roadmap toward becoming a **Data Engineer and AI-focused technologist**.  
+This repository documents a structured, hands-on learning roadmap toward becoming a **Data Engineer and AI-focused technologist**.
+
 Each week represents a stage in developing real-world engineering skills — from foundational Python programming to production-grade data pipelines and AI integrations.
 
 The repository is organized around weekly labs and hands-on projects, each simulating real-world data engineering scenarios rather than academic exercises.
@@ -37,9 +38,9 @@ Production-first design with test-driven learning, modular code organization, an
   - `main.py` — Entry point orchestrating the lab workflow
   - `README.md` — Lab specification and learning objectives
 
-- **`/practice_archive/PY4E/`** — Exploratory Python exercises from "Python for Everybody"
+- **`/practice_archive/`** — Exploratory Python exercises from other sources like "Python for Everybody" or other sources.
 
-  - Organized by chapter (Dictionaries, Tuples, Regex, Network Programming, etc.)
+  - PY4E is organized by chapter (Dictionaries, Tuples, Regex, Network Programming, etc.)
   - Quick scripts for concept exploration—not production code
 
 - **`/roadmap/nm_de_env/`** — Python virtual environment (Python 3.13)
@@ -47,7 +48,8 @@ Production-first design with test-driven learning, modular code organization, an
   - Location: `roadmap/nm_de_env/bin/python`
   - Packages: numpy, pandas, pytest, requests (see pyvenv.cfg for exact config)
 
-- **`/docs/`** — Reference documentation
+- **`/docs/`** — Reference documentation. Contains a documentation of topics that might need future reference.
+
   - `cli_cmds.md` — Command-line utilities reference
   - `python_libraries/typing.md` — Python typing patterns
 
@@ -91,6 +93,9 @@ roadmap/nm_de_env/Scripts/activate     # Windows
 ```
 
 Verify activation by checking Python executable path matches the venv location.
+
+For example, in my case it is:
+**(nm_de_env) nabiyamaredia@macmini Journey-to-Data-Engineering-and-AI %**
 
 ### Adding Dependencies
 
@@ -282,7 +287,7 @@ Each week includes:
 
 ---
 
-## Guidance to follow for any new lab
+## 10. Guidance to follow for any new lab
 
 - **Preserve existing structure:** Respect `/src`, `/tests`, `/data` separation when modifying labs
 - **Write testable code:** Always provide matching test cases in `/tests` (pytest-compatible)
@@ -293,7 +298,8 @@ Each week includes:
 
 ## 11. Reflective Statement
 
-This repository is an evolving record of how I am training to **think, document, and operate like a professional data engineer**.  
+This repository is an evolving record of how I am training to **think, document, and operate like a professional data engineer**.
+
 Each function, test, and report is designed with the mindset of real-world reliability — transforming conceptual learning into repeatable engineering practice.
 
 By treating each lab as a production problem, I am developing the habits required to:
