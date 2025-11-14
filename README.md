@@ -94,10 +94,12 @@ roadmap/nm_de_env/Scripts/activate     # Windows
 
 Verify activation by checking Python executable path matches the venv location.
 
-For example, in my case it is:
+**For example**, in my case it is:
 
 ```bash
-**(nm_de_env) nabiyamaredia@macmini Journey-to-Data-Engineering-and-AI %**
+
+(nm_de_env) nabiyamaredia@macmini Journey-to-Data-Engineering-and-AI % |
+
 ```
 
 ### Adding Dependencies
