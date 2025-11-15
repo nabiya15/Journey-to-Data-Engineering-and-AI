@@ -303,8 +303,6 @@ Each week includes:
 
 ## 11. Learning Resources
 
-### Selected Learning Resources
-
 Concise, authoritative references and practical tutorials used throughout the labs. Prefer official documentation first; supplement with focused courses, books, and example repos as needed and validate changes with tests.
 
 | Topic          | Sub-topic(if applicable) | Resource Link                                                    |
