@@ -99,22 +99,34 @@ Missing score for E007
 ## Function Design Requirements
 
 **load_reviews(filepath: str) -> list[dict]**
+
+```
 -Reads CSV into a list of dictionaries.
 -Skips header automatically.
 -Returns raw data rows for processing.
+```
 
 **assign_grade(score: float) -> str**
+
+```
 -Converts numeric score to grade based on the table above.
 -Raises ValueError for invalid or out-of-range scores.
+```
 
 **process_reviews(data: list[dict], log_path: str) -> list[dict]**
+
+```
 -Validates each row.
 -Uses assign_grade() for valid scores.
 -Logs invalid rows to error_log.txt.
 -Returns a list of graded rows.
+```
 
 **save_graded_reviews(graded_data: list[dict], output_path: str) -> None**
+
+```
 -Writes clean graded results to graded_reviews.csv.
+```
 
 ## Testing Requirements
 
