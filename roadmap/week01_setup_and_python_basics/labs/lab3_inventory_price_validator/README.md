@@ -1,4 +1,13 @@
-# Lab 1.2.2 — Inventory Price Validator
+# Lab 3 — Inventory Price Validator
+
+## 1.Scenario
+
+You work for a **retail analytics startup** that manages thousands of product price feeds from suppliers.
+Each day, they send a plain text file containing product names and prices (comma-separated).
+Some suppliers send bad data — missing prices, negative numbers, or typos.
+
+Your task: build an **Inventory Price Validator** - a program that cleans, validates, and summarizes the data.
+You’ll create three functions (modular, testable) and test them using pytest.
 
 **Objective:**  
 Design and implement a Python program that cleans, validates, and summarizes the data.
@@ -11,14 +20,7 @@ Design and implement a Python program that cleans, validates, and summarizes the
 | 4    | Write the summary to a text file   | Include a timestamp and formatted output                                        |
 | 5    | Test each part with `pytest`       | Cover success cases and error cases                                             |
 
-## 1.Scenario
-
-You work for a **retail analytics startup** that manages thousands of product price feeds from suppliers.
-Each day, they send a plain text file containing product names and prices (comma-separated).
-Some suppliers send bad data — missing prices, negative numbers, or typos.
-
-Your task: build an **Inventory Price Validator** - a program that cleans, validates, and summarizes the data.
-You’ll create three functions (modular, testable) and test them using pytest.
+---
 
 ## 2. Learning Outcomes
 
