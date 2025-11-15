@@ -50,7 +50,9 @@ lab1_3_employee_grading_automation/
 
 ```
 
-## Example Input File: data/reviews.csv
+## Example Input File:
+
+**data/reviews.csv**
 
 ```text
 EmployeeID,Name,Department,Score
@@ -70,7 +72,7 @@ E010,Leo Adams,Engineering,85
 
 ## Expected Output File
 
-1. data/graded_reviews.csv
+**1. data/graded_reviews.csv**
 
 ```text
 EmployeeID,Name,Department,Score,Grade
@@ -83,7 +85,7 @@ E009,Mina Chen,Marketing,68,D
 E010,Leo Adams,Engineering,85,B
 ```
 
-2. logs/error_log.txt
+**2. logs/error_log.txt**
 
 ```text
 Invalid score for E003 (non-numeric: abc)
