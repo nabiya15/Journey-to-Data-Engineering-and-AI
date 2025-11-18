@@ -8,7 +8,6 @@ def test_load_reviews_file_not_found():
     with pytest.raises(FileNotFoundError):
         load_reviews("non_existent_file.csv")
 
-
 def test_load_reviews_empty_file():
     # test to check if an empty file is handled correctly
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmpfile:
@@ -36,4 +35,9 @@ def test_load_reviews_valid_file():
 
     result = load_reviews(tmpfile_path)
     assert result == expected_result
+
+def test_assign_grade():{
+    
+}
+
 
