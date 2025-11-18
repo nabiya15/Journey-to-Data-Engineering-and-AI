@@ -13,11 +13,22 @@ def load_reviews(file_path:str) -> list[dict]:
     """
     employee_records:  list[dict] = []
     record_count: int = 0
-    with open(file_path, mode='r', newline='') as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=',')
+    with open(file_path, mode='r', newline='') as csvfile: # this line will automatically raise the FileNotFoundError if no file is found( Beauty of with open....)
+        reader = csv.DictReader(csvfile)
+        #try to convert score to float before appending it to the employee_records list
         for row in reader:
             record_count += 1   
+            score = row.get("Score", "").strip()
+
+            if score == "":
+                row["Score"] = None
+            else:
+                try:
+                    row["Score"]=float(score)
+                except:
+                    row["Score"]=score
             employee_records.append(row)
+
     print(f"[INFO] Loaded {record_count} records from {file_path}")
     return employee_records
     #raise NotImplementedError("Function 'load_reviews' is not yet implemented.")
@@ -37,30 +48,35 @@ def assign_grade(score:float)->str:
 
 def process_reviews(employee_records: list[dict], errfile_path:str) -> list[dict]:
     processed_records = []
-    with open(f"{errfile_path}_{datetime.now().strftime('%m-%d-%Y_%H:%M:%S')}.txt", "w") as errfile:
-        for row in employee_records:            
-            try:
-                if type(row["Score"]) is not int or type(row["Score"]) is not float:
-                    row["Score"] = float(row["Score"])
-                    
-            except ValueError:
-                    errfile.write(f"[ERR] Invalid score format for employee {row['EmployeeID']}: {row['Score']}. Score has to be an integer/float.\n")
-                    continue
-            
-            try:
-                if row["Score"]==" ":
-                    errfile.write(f"[ERR] Missing score for employee {row['EmployeeID']}. Score cannot be empty.\n")
-                    continue
-                elif row["Score"]>100 or row['Score']<0:
-                    errfile.write(f"[ERR]Invalid score for employee {row['EmployeeID']}: {row['Score']}. Score has to be between 0 and 100.\n")
-                    continue
+    errors = []
+    for row in employee_records:
+        score = row.get("Score")
+        # Case 1 : Missing Score
+        if score is None:
+            errors.append(f"[ERR] Missing score for employee {row.get('EmployeeID')}.")
+            continue
+        # Case 2: non-numeric score
+        if isinstance(score, str):
+            errors.append(f"[ERR] Non-numeric score for employee {row.get('EmployeeID')}:{score}.")
+            continue
+        # Case 3: Numeric but out of range score
+        if(score < 0 or score > 100):
+            errors.append(f"[ERR] Invalid score for employee {row.get('EmployeeID')}:{score}. Score must be between 0-100")
+            continue 
 
-            except ValueError as e:
-                raise ValueError(f"Malformed data: {e}")  
-            grade = assign_grade(row["Score"])
-            processed_records.append({**row, "Grade": grade})
-            
+        # Valid Score -> assign grade
+        grade = assign_grade(score)
+        processed_records.append({**row, "Grade":grade})
+    #only write to error file IF error exists
+    if errors:
+        timestamp = datetime.now().strftime("%m-%d-%Y_%H:%M:%S")
+        error_file = f"{errfile_path}_{timestamp}.txt"
+        with open(error_file, "w") as f:
+            for e in errors:
+                f.write(e+"\n")
+
     return processed_records
+
 
 def save_processed_reviews(processed_records: list[dict], output_file_path: str) -> None:
 
@@ -74,12 +90,9 @@ def save_processed_reviews(processed_records: list[dict], output_file_path: str)
             record_count += 1
             writer.writerow(record)
     print(f"[INFO] Saved {record_count} records to {output_file_path}")
-
-        
-            
+           
     
 
-       
 
              
    
